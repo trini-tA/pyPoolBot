@@ -1,9 +1,14 @@
 from machine import Pin, I2C
 import ssd1306
+
 import utime as time
 from screen import Screen
-from measures import Measures
 from server import Server
+from measures import Measures
+from ifconfig import IFCONFIG
+import socket
+import json
+
 
 VERSION = "0.1"
 NAME = "Pool"
